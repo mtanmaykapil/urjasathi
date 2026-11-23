@@ -30,6 +30,7 @@ export const submitInterest = async (data: InterestSubmission): Promise<{ succes
 
   console.log('[InterestApi] Interest submission received (client-side only):', data);
 
-  // In this frontend-only phase, intentionally reject so user sees the fallback WhatsApp prompt
-  return Promise.reject(new Error('Backend not connected yet'));
+  // In this frontend-only phase, resolve with a success flag for demo purposes
+  return { success: true };
+
 };
