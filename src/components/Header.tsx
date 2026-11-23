@@ -2,15 +2,41 @@ import React, { useState } from 'react';
 import { useT } from '../i18n';
 import { SITE_NAME } from '../config';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onNavigate?: (route: string) => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   const { lang, t, toggleLang } = useT();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleNavClick = (targetId: string) => {
+  const navigateTo = (routeOrAnchor: string) => {
     setMobileMenuOpen(false);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+
+    if (routeOrAnchor.startsWith('/')) {
+      if (onNavigate) {
+        onNavigate(routeOrAnchor);
+      } else {
+        window.history.pushState({}, '', routeOrAnchor);
+        window.dispatchEvent(new PopStateEvent('popstate'));
+      }
+      return;
+    }
+
+    // Anchor scrolling
+    if (window.location.pathname !== '/' && window.location.hash !== '') {
+      // If currently on /guide or /privacy, navigate to root with anchor
+      if (onNavigate) {
+        onNavigate(`/#${routeOrAnchor}`);
+      } else {
+        window.history.pushState({}, '', `/#${routeOrAnchor}`);
+        window.dispatchEvent(new PopStateEvent('popstate'));
+      }
+    } else {
+      const targetElement = document.getElementById(routeOrAnchor);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -27,9 +53,9 @@ export const Header: React.FC = () => {
       <header className="sticky top-0 z-40 bg-[#FEFDF5]/95 backdrop-blur-md border-b border-amber-200/60 shadow-xs">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
           {/* Logo / Brand Name */}
-          <a
-            href="/"
-            className="flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 rounded-lg p-1"
+          <button
+            onClick={() => navigateTo('/')}
+            className="flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 rounded-lg p-1 text-left cursor-pointer"
             aria-label={`${SITE_NAME} Home`}
           >
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-green-700 text-white flex items-center justify-center font-bold text-lg shadow-xs group-hover:bg-green-800 transition-colors">
@@ -62,24 +88,30 @@ export const Header: React.FC = () => {
                 {t.header.tagline}
               </span>
             </div>
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6" aria-label="Main Navigation">
             <button
-              onClick={() => handleNavClick('demo')}
+              onClick={() => navigateTo('demo')}
               className="text-base font-medium text-slate-700 hover:text-green-800 py-2 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 rounded-md px-2"
             >
               {t.header.navDemo}
             </button>
             <button
-              onClick={() => handleNavClick('how-it-works')}
+              onClick={() => navigateTo('how-it-works')}
               className="text-base font-medium text-slate-700 hover:text-green-800 py-2 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 rounded-md px-2"
             >
               {t.header.navHowItWorks}
             </button>
             <button
-              onClick={() => handleNavClick('contact')}
+              onClick={() => navigateTo('/guide')}
+              className="text-base font-medium text-green-800 hover:text-green-950 py-2 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 rounded-md px-2 font-semibold"
+            >
+              {t.header.navGuide}
+            </button>
+            <button
+              onClick={() => navigateTo('contact')}
               className="text-base font-medium text-slate-700 hover:text-green-800 py-2 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 rounded-md px-2"
             >
               {t.header.navContact}
@@ -129,19 +161,25 @@ export const Header: React.FC = () => {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-amber-200/80 bg-[#FEFDF5] px-4 pt-3 pb-5 space-y-2 shadow-md">
             <button
-              onClick={() => handleNavClick('demo')}
+              onClick={() => navigateTo('demo')}
               className="w-full text-left min-h-[48px] px-4 py-2.5 text-base font-medium text-slate-800 rounded-lg hover:bg-amber-100/80 flex items-center"
             >
               {t.header.navDemo}
             </button>
             <button
-              onClick={() => handleNavClick('how-it-works')}
+              onClick={() => navigateTo('how-it-works')}
               className="w-full text-left min-h-[48px] px-4 py-2.5 text-base font-medium text-slate-800 rounded-lg hover:bg-amber-100/80 flex items-center"
             >
               {t.header.navHowItWorks}
             </button>
             <button
-              onClick={() => handleNavClick('contact')}
+              onClick={() => navigateTo('/guide')}
+              className="w-full text-left min-h-[48px] px-4 py-2.5 text-base font-semibold text-green-800 rounded-lg hover:bg-green-50 flex items-center"
+            >
+              {t.header.navGuide}
+            </button>
+            <button
+              onClick={() => navigateTo('contact')}
               className="w-full text-left min-h-[48px] px-4 py-2.5 text-base font-medium text-slate-800 rounded-lg hover:bg-amber-100/80 flex items-center"
             >
               {t.header.navContact}

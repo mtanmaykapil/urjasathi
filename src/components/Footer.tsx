@@ -3,9 +3,10 @@ import { useT } from '../i18n';
 
 interface FooterProps {
   onPrivacyClick: () => void;
+  onGuideClick?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onPrivacyClick }) => {
+export const Footer: React.FC<FooterProps> = ({ onPrivacyClick, onGuideClick }) => {
   const { t } = useT();
 
   return (
@@ -20,7 +21,16 @@ export const Footer: React.FC<FooterProps> = ({ onPrivacyClick }) => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
+          {onGuideClick && (
+            <button
+              onClick={onGuideClick}
+              className="min-h-[44px] px-3 py-2 text-sm text-amber-300 hover:text-white underline underline-offset-4 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-md cursor-pointer"
+            >
+              {t.footer.guideLink}
+            </button>
+          )}
+
           <button
             onClick={onPrivacyClick}
             className="min-h-[44px] px-3 py-2 text-sm text-slate-300 hover:text-white underline underline-offset-4 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-md cursor-pointer"

@@ -1,0 +1,71 @@
+{
+  "subsidy_structure": {
+    "first_2kw_rate": 30000,
+    "additional_3kw_rate": 18000,
+    "max_cap": 78000,
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc2025212499601.pdf",
+    "verified_on": "TO_BE_FILLED_BY_FOUNDER",
+    "verify_before_launch": true
+  },
+  "capacity_guidance": {
+    "tiers": [
+      {
+        "units_range": "0 - 150 units",
+        "recommended_kw": "1 - 2 kW"
+      },
+      {
+        "units_range": "150 - 300 units",
+        "recommended_kw": "2 - 3 kW"
+      },
+      {
+        "units_range": "Above 300 units",
+        "recommended_kw": "Above 3 kW"
+      }
+    ],
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc2025212499601.pdf",
+    "verified_on": "TO_BE_FILLED_BY_FOUNDER"
+  },
+  "high_level_process": {
+    "stages": [
+      {
+        "step": 1,
+        "title_en": "Apply on the national portal",
+        "title_hi": "राष्ट्रीय पोर्टल पर आवेदन करें",
+        "description_en": "Submit application on the national portal with your electricity consumer number and DISCOM details.",
+        "description_hi": "अपने बिजली उपभोक्ता नंबर और DISCOM विवरण के साथ राष्ट्रीय पोर्टल पर आवेदन जमा करें।"
+      },
+      {
+        "step": 2,
+        "title_en": "Get DISCOM approval",
+        "title_hi": "DISCOM से तकनीकी स्वीकृति प्राप्त करें",
+        "description_en": "DISCOM evaluates technical feasibility for rooftop connectivity to the local distribution transformer.",
+        "description_hi": "DISCOM स्थानीय ट्रांसफार्मर से छत पर सोलर कनेक्शन की तकनीकी संभाव्यता की जांच करता है।"
+      },
+      {
+        "step": 3,
+        "title_en": "Install through a registered vendor",
+        "title_hi": "पंजीकृत वेंडर से इंस्टॉलेशन कराएं",
+        "description_en": "Procure and install ALMM-approved panels and inverters through a registered solar vendor.",
+        "description_hi": "पंजीकृत सोलर वेंडर के माध्यम से ALMM-स्वीकृत पैनल और इन्वर्टर स्थापित करवाएं।"
+      },
+      {
+        "step": 4,
+        "title_en": "Net metering and inspection",
+        "title_hi": "नेट मीटरिंग और निरीक्षण",
+        "description_en": "DISCOM inspects the installation, replaces the old meter with a bidirectional net meter, and issues commissioning certificate.",
+        "description_hi": "DISCOM साइट का निरीक्षण करता है, द्विदिश (बायडायरेक्शनल) नेट मीटर लगाता है और कमीशनिंग प्रमाण पत्र जारी करता है।"
+      },
+      {
+        "step": 5,
+        "title_en": "Subsidy credited to the bank account",
+        "title_hi": "बैंक खाते में सब्सिडी जमा",
+        "description_en": "Submit bank account details and copy of cancelled cheque on the portal. Subsidy is directly credited via DBT.",
+        "description_hi": "पोर्टल पर बैंक खाता और रद्द चेक की प्रति जमा करें। सब्सिडी DBT द्वारा सीधे खाते में भेजी जाती है।"
+      }
+    ],
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc2025212499601.pdf",
+    "verified_on": "TO_BE_FILLED_BY_FOUNDER",
+    "disclaimer": "High-level summary of 5 stages; to be verified against the official nine-step operational guidelines before launch."
+  },
+  "official_portal_url": "https://pmsuryaghar.gov.in"
+}

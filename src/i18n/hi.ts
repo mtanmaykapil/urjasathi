@@ -7,6 +7,7 @@ export const hi: Translations = {
     tagline: 'सोलर इंस्टालरों के लिए जॉब ट्रैकर', // REVIEW: native check
     navDemo: 'डेमो चलाएं', // REVIEW: native check
     navHowItWorks: 'कैसे काम करता है', // REVIEW: native check
+    navGuide: 'सोलर गाइड', // REVIEW: native check
     navContact: 'संपर्क करें', // REVIEW: native check
     langToggleAria: 'अंग्रेज़ी भाषा में बदलें', // REVIEW: native check
     menuOpen: 'मेनू खोलें',
@@ -152,6 +153,7 @@ export const hi: Translations = {
   footer: {
     statutoryDisclaimer: 'UrjaSaathi एक स्वतंत्र टूल है और यह किसी भी सरकारी पोर्टल या योजना से संबद्ध नहीं है।', // REVIEW: native check
     privacyLink: 'गोपनीयता नोट (प्राइवेसी)', // REVIEW: native check
+    guideLink: 'सोलर गाइड (राज्य और सब्सिडी)', // REVIEW: native check
     copyright: 'UrjaSaathi. भारत के रूफटॉप सोलर इंस्टालरों के लिए निर्मित।', // REVIEW: native check
   },
   privacy: {
@@ -167,5 +169,136 @@ export const hi: Translations = {
     section3Text: 'आप किसी भी समय हमें WhatsApp पर संदेश भेजकर अपना सारा डेटा हटाने का अनुरोध कर सकते हैं। हम तुरंत विवरण हटा देंगे।', // REVIEW: native check
     section4Title: '4. कानूनी स्थिति', // REVIEW: native check
     section4Text: 'यह दस्तावेज़ प्रारंभिक परीक्षण के लिए एक सरल ड्राफ्ट है और किसी भी व्यावसायिक लॉन्च से पहले इसकी औपचारिक कानूनी समीक्षा की जाएगी।', // REVIEW: native check
+  },
+  landingGuideTeaser: {
+    badge: 'कस्टमर सोलर गाइड', // REVIEW: native check
+    title: 'अपने ग्राहकों को सोलर प्रक्रिया आसानी से समझाएं', // REVIEW: native check
+    subhead: 'घर के मालिकों को हमारी सरल गाइड दिखाएं जिसमें 28 राज्यों और 8 केंद्र शासित प्रदेशों की सब्सिडी, DISCOM नेट मीटरिंग और ज़रूरी कागज़ात समझाए गए हैं।', // REVIEW: native check
+    cta: 'सोलर गाइड देखें', // REVIEW: native check
+  },
+  guide: {
+    common: {
+      disclaimer: 'केवल सूचना के लिए। UrjaSaathi एक स्वतंत्र टूल है। हमेशा आधिकारिक पोर्टल पर पुष्टि करें।', // REVIEW: native check
+      reportErrorBtn: 'WhatsApp पर त्रुटि बताएं', // REVIEW: native check
+      reportErrorWhatsAppTemplate: 'नमस्ते, मुझे सोलर गाइड के इस पेज पर एक सुधार बताना है: {url}', // REVIEW: native check
+      lastVerified: 'अंतिम सत्यापन तारीख', // REVIEW: native check
+      notVerifiedYet: 'अभी सत्यापित नहीं हुआ - नीचे आधिकारिक लिंक देखें', // REVIEW: native check
+      notVerifiedShort: 'सत्यापित नहीं', // REVIEW: native check
+      sourceLabel: 'आधिकारिक स्रोत', // REVIEW: native check
+      officialPortal: 'आधिकारिक पोर्टल', // REVIEW: native check
+      stateVerifyingBanner: 'हम अभी इस राज्य के नियमों का सत्यापन कर रहे हैं। आधिकारिक सर्कुलर की पुष्टि होते ही जानकारी उपलब्ध होगी।', // REVIEW: native check
+      backToGuideHub: '← सोलर गाइड मुख्य पृष्ठ', // REVIEW: native check
+      backToHome: '← मुख्य साइट', // REVIEW: native check
+      stateTitle: '{state} में रूफटॉप सोलर', // REVIEW: native check
+      stateSubtitle: 'राज्य के आधिकारिक पोर्टल, DISCOM और सत्यापित नियम।', // REVIEW: native check
+      officialLinksTitle: 'राज्य के आधिकारिक पोर्टल और लिंक', // REVIEW: native check
+      nodalAgencyLabel: 'राज्य नोडल एजेंसी (SNA)', // REVIEW: native check
+      statePortalLabel: 'राज्य सोलर पोर्टल', // REVIEW: native check
+      discomsLabel: 'बिजली वितरण कंपनियां (DISCOMs)', // REVIEW: native check
+      netMeteringRegulationLabel: 'राज्य नेट मीटरिंग नियम', // REVIEW: native check
+      noOfficialLinks: 'अभी कोई सत्यापित आधिकारिक लिंक उपलब्ध नहीं है। राष्ट्रीय पोर्टल देखें।', // REVIEW: native check
+      topUpTitle: 'राज्य टॉप-अप सब्सिडी', // REVIEW: native check
+    },
+    hub: {
+      headline: 'भारतीय घरों के लिए रूफटॉप सोलर गाइड', // REVIEW: native check
+      subhead: 'सब्सिडी, तकनीकी चरण, क्षमता चयन और राज्यों के DISCOM नियमों पर स्पष्ट व सटीक जानकारी।', // REVIEW: native check
+      searchPlaceholder: 'अपना राज्य या केंद्र शासित प्रदेश खोजें (जैसे: राजस्थान, महाराष्ट्र, दिल्ली)...', // REVIEW: native check
+      allStatesTitle: 'सभी 28 राज्य और 8 केंद्र शासित प्रदेश', // REVIEW: native check
+      statusLink: 'डेटा सत्यापन स्थिति देखें (आंतरिक)', // REVIEW: native check
+      card1Title: 'सब्सिडी दरें', // REVIEW: native check
+      card1Desc: 'केंद्रीय योजना के तहत सब्सिडी राशि (शुरुआती 2 kW पर ₹30,000/kW) और गणना।', // REVIEW: native check
+      card2Title: 'तकनीकी प्रक्रिया', // REVIEW: native check
+      card2Desc: 'द्विदिश (बायडायरेक्शनल) नेट मीटर, ग्रिड कनेक्शन और सरकारी जांच की प्रक्रिया।', // REVIEW: native check
+      card3Title: 'ज़रूरी कागज़ात', // REVIEW: native check
+      card3Desc: 'बिजली बिल, पहचान पत्र और छत के मालिकाना हक के दस्तावेज़ों की सूची।', // REVIEW: native check
+      centralGuideCta: 'केंद्रीय योजना की गाइड पढ़ें', // REVIEW: native check
+      processCta: 'मीटर और नेट मीटरिंग समझें', // REVIEW: native check
+      checklistCta: 'चेकलिस्ट खोलें', // REVIEW: native check
+    },
+    estimator: {
+      title: 'केंद्रीय सब्सिडी कैलकुलेटर', // REVIEW: native check
+      subhead: 'अपनी छत की अनुमानित क्षमता (kW) दर्ज करके आधिकारिक केंद्रीय सब्सिडी जानें।', // REVIEW: native check
+      kwLabel: 'सिस्टम क्षमता (kW)', // REVIEW: native check
+      householdToggleLabel: 'व्यक्तिगत आवासीय घर (Individual Household)', // REVIEW: native check
+      householdNotice: 'सब्सिडी का यह सूत्र केवल व्यक्तिगत आवासीय रूफटॉप सोलर सिस्टम पर लागू होता है।', // REVIEW: native check
+      estimateResultLabel: 'अनुमानित केंद्रीय सब्सिडी', // REVIEW: native check
+      formulaLabel: 'आधिकारिक केंद्रीय गणना', // REVIEW: native check
+      estimateDisclaimer: 'अनुमानित राशि। केवल केंद्रीय योजना। राज्य टॉप-अप शामिल नहीं जब तक सत्यापित न हो।', // REVIEW: native check
+      stateTopUpHeader: 'राज्य टॉप-अप सब्सिडी', // REVIEW: native check
+      stateTopUpNotVerified: 'इस राज्य के लिए अतिरिक्त टॉप-अप की स्थिति अभी सत्यापित नहीं है।', // REVIEW: native check
+      stateTopUpNone: 'इस राज्य में कोई अतिरिक्त राज्य टॉप-अप नहीं है। केवल केंद्रीय सब्सिडी लागू है।', // REVIEW: native check
+      selectStatePrompt: 'राज्य स्तर की टॉप-अप सब्सिडी जांचने के लिए राज्य चुनें:', // REVIEW: native check
+    },
+    central: {
+      title: 'राष्ट्रीय रूफटॉप सोलर योजना और दिशानिर्देश', // REVIEW: native check
+      subtitle: 'केंद्रीय आवासीय सब्सिडी दरें, बिजली खपत के अनुसार क्षमता चयन, और 5 मुख्य चरण।', // REVIEW: native check
+      subsidySectionTitle: 'केंद्रीय आवासीय सब्सिडी संरचना', // REVIEW: native check
+      subsidyTier1: 'पहले 2 kW तक: ₹30,000 प्रति kW', // REVIEW: native check
+      subsidyTier2: 'अगले 1 kW (2 से 3 kW): ₹18,000 प्रति kW', // REVIEW: native check
+      subsidyTier3: '3 kW से अधिक: कुल केंद्रीय सब्सिडी अधिकतम ₹78,000 सीमित', // REVIEW: native check
+      subsidyNote: 'कमीशनिंग के बाद सब्सिडी सीधे उपभोक्ता के बैंक खाते में DBT के माध्यम से भेजी जाती है।', // REVIEW: native check
+      capacitySectionTitle: 'मासिक बिजली बिल के अनुसार अनुशंसित क्षमता', // REVIEW: native check
+      unitsHeader: 'मासिक बिजली खपत (यूनिट)', // REVIEW: native check
+      recommendedKwHeader: 'अनुशंसित सोलर क्षमता', // REVIEW: native check
+      processSectionTitle: '5 मुख्य तकनीकी और प्रशासनिक चरण', // REVIEW: native check
+      documentsSectionTitle: 'तैयार रखे जाने वाले दस्तावेज़', // REVIEW: native check
+      documentsNotice: 'सैंपल सूची - अपने राज्य और DISCOM के नियमों की पुष्टि अवश्य करें', // REVIEW: native check
+      doc1: 'हालिया बिजली का बिल (पिछले 6 महीने का, जिसमें उपभोक्ता खाता संख्या दर्ज हो)', // REVIEW: native check
+      doc2: 'छत/मकान के मालिकाना हक का प्रमाण (रजिस्टर्ड सेल डीड, हाउस टैक्स रसीद या म्यूनिसिपल रसीद)', // REVIEW: native check
+      doc3: 'आवेदक का पहचान पत्र (आधार कार्ड या वोटर आईडी, जो बिजली बिल के नाम से मेल खाता हो)', // REVIEW: native check
+      doc4: 'सक्रिय बैंक खाते का विवरण और रद्द चेक (कैंसल्ड चेक) की कॉपी (सब्सिडी DBT हेतु)', // REVIEW: native check
+      doc5: 'छत की स्पष्ट तस्वीरें जिसमें धूप और छाया-रहित क्षेत्र दिखाई दे', // REVIEW: native check
+      faqSectionTitle: 'शब्दावली और सरल स्पष्टीकरण', // REVIEW: native check
+      faqDiscomQ: 'DISCOM क्या है?', // REVIEW: native check
+      faqDiscomA: 'DISCOM का अर्थ है विद्युत वितरण कंपनी (Distribution Company)। यह वह सरकारी या निजी कंपनी है जो आपके घर तक बिजली पहुंचाती है (जैसे टाटा पावर, टोरेंट, BESCOM, MSEDCL, UPPCL)।', // REVIEW: native check
+      faqNetMeterQ: 'नेट मीटरिंग और बायडायरेक्शनल मीटर क्या है?', // REVIEW: native check
+      faqNetMeterA: 'नेट मीटर (द्विदिश मीटर) वह मीटर है जो आपके द्वारा ग्रिड से ली गई बिजली और ग्रिड को भेजी गई सोलर बिजली दोनों को अलग-अलग मापता है। आपका बिल बची हुई नेट यूनिट पर बनता है।', // REVIEW: native check
+      faqEmpanelledVendorQ: 'पंजीकृत / एम्पैनल्ड वेंडर क्या होता है?', // REVIEW: native check
+      faqEmpanelledVendorA: 'केवल राष्ट्रीय पोर्टल पर पंजीकृत सोलर वेंडर ही सब्सिडी वाले सिस्टम लगाने के लिए अधिकृत हैं। गैर-पंजीकृत वेंडरों से लगवाए गए सिस्टम पर सरकारी सब्सिडी नहीं मिलती।', // REVIEW: native check
+      faqAlmmQ: 'ALMM क्या है?', // REVIEW: native check
+      faqAlmmA: 'ALMM (मॉडल्स और निर्माताओं की अनुमोदित सूची) नवीन एवं नवीकरणीय ऊर्जा मंत्रालय (MNRE) द्वारा जारी की जाती है। केवल ALMM सूची में शामिल सोलर पैनलों पर ही केंद्रीय सब्सिडी मिलती है।', // REVIEW: native check
+      officialPortalLinkText: 'आधिकारिक राष्ट्रीय पोर्टल पर जाएं (PM Surya Ghar)', // REVIEW: native check
+    },
+    process: {
+      title: 'मीटर और नेट मीटरिंग की पूरी जानकारी', // REVIEW: native check
+      subhead: 'समझें कि बिजली का मीटर कैसे बदलता है और अतिरिक्त सोलर बिजली का हिसाब कैसे होता है।', // REVIEW: native check
+      meterHeading: 'बायडायरेक्शनल (द्विदिश) मीटर क्या होता है?', // REVIEW: native check
+      meterDesc: 'सामान्य घरेलू मीटर केवल एक दिशा में बिजली मापता है (ग्रिड से घर में आने वाली बिजली)। दोपहर के समय जब सोलर पैनल अधिक बिजली बनाते हैं, तो अतिरिक्त बिजली ग्रिड में वापस जाती है। बायडायरेक्शनल मीटर दोनों दिशाओं (आयात और निर्यात) में बिजली का सटीक हिसाब रखता है।', // REVIEW: native check
+      surplusHeading: 'अतिरिक्त सोलर बिजली का समायोजन कैसे होता है?', // REVIEW: native check
+      surplusDesc: 'ग्रिड को भेजी गई अतिरिक्त बिजली को रात के समय या बादलों वाले दिनों में उपयोग की गई बिजली के मुकाबले समायोजित (ऑफसेट) किया जाता है। इसका वार्षिक समायोजन और दरें राज्य विद्युत विनियामक आयोग (SERC) के नियमों के अनुसार होती हैं।', // REVIEW: native check
+      inspectionHeading: 'सब्सिडी जारी होने से पहले सरकारी जांच', // REVIEW: native check
+      inspectionDesc: 'वेंडर द्वारा पैनल और इन्वर्टर का काम पूरा होने के बाद DISCOM के इंजीनियर साइट का निरीक्षण करते हैं, सुरक्षा उपकरणों की जांच करते हैं, नेट मीटर लगाते हैं और कमीशनिंग प्रमाण पत्र जारी करते हैं। यह प्रमाण पत्र पोर्टल पर अपलोड होने के बाद ही सब्सिडी खाते में आती है।', // REVIEW: native check
+      noFeesDisclaimer: 'नोट: निरीक्षण का समय और शुल्क आपके राज्य के DISCOM पर निर्भर करता है। UrjaSaathi कोई भी शुल्क तब तक नहीं लिखता जब तक वह आधिकारिक रूप से सत्यापित न हो।', // REVIEW: native check
+    },
+    checklist: {
+      title: 'इंटरैक्टिव रूफटॉप सोलर चेकलिस्ट', // REVIEW: native check
+      subhead: 'अपने दस्तावेज़ और छत की तैयारी टिक करें। इसे WhatsApp पर सीधे अपने सोलर इंस्टालर को भेजें।', // REVIEW: native check
+      sampleNotice: 'सूचनात्मक मार्गदर्शन के लिए सैंपल चेकलिस्ट। अपने पंजीकृत वेंडर और DISCOM से सटीक नियमों की पुष्टि करें।', // REVIEW: native check
+      progressLabel: 'तैयारी की प्रगति', // REVIEW: native check
+      shareBtn: 'अपने इंस्टालर को WhatsApp पर भेजें', // REVIEW: native check
+      whatsappTemplate: 'नमस्ते! UrjaSaathi से मेरी रूफटॉप सोलर तैयारी चेकलिस्ट: {readyCount} में से {totalCount} बिंदु तैयार हैं।\n\nतैयार:\n{readyItems}\n\nबाकी:\n{pendingItems}', // REVIEW: native check
+      item1: 'सक्रिय उपभोक्ता नंबर वाला नवीनतम बिजली बिल', // REVIEW: native check
+      item2: 'छत के मालिकाना हक का प्रमाण (प्रॉपर्टी टैक्स रसीद या सेल डीड)', // REVIEW: native check
+      item3: 'आधार / पहचान पत्र (बिजली बिल के नाम से मेल खाता हुआ)', // REVIEW: native check
+      item4: 'बैंक पासबुक या कैंसल्ड चेक (आवेदक के नाम पर)', // REVIEW: native check
+      item5: 'साफ और छाया-मुक्त छत का स्थान जाँचा गया', // REVIEW: native check
+      item6: 'बिजली बिल पर स्वीकृत लोड (Sanctioned Load) बनाम सोलर क्षमता जाँची गई', // REVIEW: native check
+    },
+    status: {
+      title: 'गाइड डेटा सत्यापन ट्रैकर', // REVIEW: native check
+      subtitle: 'सभी 28 राज्यों और 8 केंद्र शासित प्रदेशों के डेटा सत्यापन की आंतरिक स्थिति।', // REVIEW: native check
+      totalLabel: 'कुल राज्य एवं केंद्र शासित प्रदेश', // REVIEW: native check
+      verifiedLabel: 'सत्यापित राज्य', // REVIEW: native check
+      pendingLabel: 'सत्यापन लंबित', // REVIEW: native check
+      stateCol: 'राज्य / केंद्र शासित प्रदेश', // REVIEW: native check
+      typeCol: 'प्रकार', // REVIEW: native check
+      statusCol: 'स्थिति', // REVIEW: native check
+      topUpCol: 'राज्य टॉप-अप', // REVIEW: native check
+      lastVerifiedCol: 'अंतिम सत्यापन तारीख', // REVIEW: native check
+      stateUT: 'केंद्र शासित प्रदेश', // REVIEW: native check
+      stateState: 'राज्य', // REVIEW: native check
+      verifiedTag: 'सत्यापित', // REVIEW: native check
+      notVerifiedTag: 'सत्यापन लंबित', // REVIEW: native check
+    },
   },
 };
