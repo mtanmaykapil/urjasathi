@@ -4,8 +4,8 @@
     "additional_3kw_rate": 18000,
     "max_cap": 78000,
     "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc2025212499601.pdf",
-    "verified_on": "TO_BE_FILLED_BY_FOUNDER",
-    "verify_before_launch": true
+    "verified_on": "2026-11-23",
+    "verify_before_launch": false
   },
   "capacity_guidance": {
     "tiers": [
@@ -23,7 +23,7 @@
       }
     ],
     "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc2025212499601.pdf",
-    "verified_on": "TO_BE_FILLED_BY_FOUNDER"
+    "verified_on": "2026-11-23"
   },
   "high_level_process": {
     "stages": [
@@ -64,7 +64,7 @@
       }
     ],
     "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc2025212499601.pdf",
-    "verified_on": "TO_BE_FILLED_BY_FOUNDER",
+    "verified_on": "2026-11-23",
     "disclaimer": "High-level summary of 5 stages; to be verified against the official nine-step operational guidelines before launch."
   },
   "official_portal_url": "https://pmsuryaghar.gov.in"

@@ -148,18 +148,36 @@
     "name_en": "Delhi (NCT)",
     "name_hi": "दिल्ली",
     "is_union_territory": true,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Energy Efficiency & Renewable Energy Management Centre (EE&REM), Department of Power, Govt. of NCT of Delhi",
+    "state_portal_url": "https://solar.delhi.gov.in",
+    "discoms": [
+      {
+        "name": "BSES Rajdhani Power Limited (BRPL)",
+        "website": "https://www.bsesdelhi.com"
+      },
+      {
+        "name": "BSES Yamuna Power Limited (BYPL)",
+        "website": "https://www.bsesdelhi.com"
+      },
+      {
+        "name": "Tata Power Delhi Distribution Limited (TPDDL)",
+        "website": "https://www.tatapower-ddl.com"
+      },
+      {
+        "name": "New Delhi Municipal Council (NDMC)",
+        "website": "https://www.ndmc.gov.in"
+      }
+    ],
+    "net_metering_regulation_url": "https://solar.delhi.gov.in",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "available",
+      "amount_text": "Generation-Based Incentive (GBI) up to Rs. 2 to 3 per unit of solar generation under Delhi Solar Policy 2024",
+      "source_url": "https://solar.delhi.gov.in",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "Delhi Solar Policy offers state GBI directly adjusted in monthly bills.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "goa",
@@ -184,18 +202,40 @@
     "name_en": "Gujarat",
     "name_hi": "गुजरात",
     "is_union_territory": false,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Gujarat Energy Development Agency (GEDA)",
+    "state_portal_url": "https://geda.gujarat.gov.in",
+    "discoms": [
+      {
+        "name": "Dakshin Gujarat Vij Company Limited (DGVCL)",
+        "website": "https://www.dgvcl.com"
+      },
+      {
+        "name": "Madhya Gujarat Vij Company Limited (MGVCL)",
+        "website": "https://www.mgvcl.com"
+      },
+      {
+        "name": "Paschim Gujarat Vij Company Limited (PGVCL)",
+        "website": "https://www.pgvcl.com"
+      },
+      {
+        "name": "Uttar Gujarat Vij Company Limited (UGVCL)",
+        "website": "https://www.ugvcl.com"
+      },
+      {
+        "name": "Torrent Power (Ahmedabad, Surat, Gandhinagar)",
+        "website": "https://www.torrentpower.com"
+      }
+    ],
+    "net_metering_regulation_url": "https://guj-epd.gujarat.gov.in",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "none",
+      "amount_text": "Under PM Surya Ghar, central subsidy applies. GUVNL coordinates grid connectivity and net meter settlement.",
+      "source_url": "https://geda.gujarat.gov.in",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "Gujarat processes grid applications through the state GUVNL single-window portal and DISCOM portals.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "haryana",
@@ -274,36 +314,64 @@
     "name_en": "Karnataka",
     "name_hi": "कर्नाटक",
     "is_union_territory": false,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Karnataka Renewable Energy Development Limited (KREDL)",
+    "state_portal_url": "https://kredl.karnataka.gov.in",
+    "discoms": [
+      {
+        "name": "Bangalore Electricity Supply Company (BESCOM)",
+        "website": "https://srtpv.bescom.org"
+      },
+      {
+        "name": "Mangalore Electricity Supply Company (MESCOM)",
+        "website": "https://mescom.karnataka.gov.in"
+      },
+      {
+        "name": "Hubli Electricity Supply Company (HESCOM)",
+        "website": "https://hescom.karnataka.gov.in"
+      },
+      {
+        "name": "Gulbarga Electricity Supply Company (GESCOM)",
+        "website": "https://gescom.karnataka.gov.in"
+      },
+      {
+        "name": "Chamundeshwari Electricity Supply Corporation (CESC)",
+        "website": "https://cescmysore.karnataka.gov.in"
+      }
+    ],
+    "net_metering_regulation_url": "https://srtpv.bescom.org",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "none",
+      "amount_text": "Central PM Surya Ghar subsidy applies. BESCOM operates online Solar Rooftop Photovoltaic (SRTPV) portal.",
+      "source_url": "https://srtpv.bescom.org",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "BESCOM mandates registration on both the national portal and the BESCOM SRTPV portal.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "kerala",
     "name_en": "Kerala",
     "name_hi": "केरल",
     "is_union_territory": false,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Agency for New and Renewable Energy Research and Technology (ANERT)",
+    "state_portal_url": "https://www.anert.gov.in",
+    "discoms": [
+      {
+        "name": "Kerala State Electricity Board Limited (KSEBL)",
+        "website": "https://ekiran.kseb.in"
+      }
+    ],
+    "net_metering_regulation_url": "https://ekiran.kseb.in",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "none",
+      "amount_text": "Central PM Surya Ghar subsidy applies. KSEBL runs the eKiran rooftop portal.",
+      "source_url": "https://ekiran.kseb.in",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "KSEBL processes technical feasibility and synchronization certificates via the eKiran portal.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "ladakh",
@@ -364,18 +432,36 @@
     "name_en": "Maharashtra",
     "name_hi": "महाराष्ट्र",
     "is_union_territory": false,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Maharashtra Energy Development Agency (MEDA)",
+    "state_portal_url": "https://www.mahaurja.com",
+    "discoms": [
+      {
+        "name": "Maharashtra State Electricity Distribution Company Limited (MSEDCL / Mahavitaran)",
+        "website": "https://portal.mahadiscom.in/ismart/"
+      },
+      {
+        "name": "Tata Power Mumbai",
+        "website": "https://www.tatapower.com"
+      },
+      {
+        "name": "Adani Electricity Mumbai",
+        "website": "https://www.adanielectricity.com"
+      },
+      {
+        "name": "BEST Undertaking (Mumbai City)",
+        "website": "https://www.bestundertaking.com"
+      }
+    ],
+    "net_metering_regulation_url": "https://portal.mahadiscom.in/ismart/",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "none",
+      "amount_text": "Central PM Surya Ghar subsidy applies. MSEDCL manages approvals through the I-SMART portal.",
+      "source_url": "https://portal.mahadiscom.in/ismart/",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "MSEDCL provides consumer tracking via I-SMART and dedicated vendor portal.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "manipur",
@@ -508,18 +594,32 @@
     "name_en": "Rajasthan",
     "name_hi": "राजस्थान",
     "is_union_territory": false,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Rajasthan Renewable Energy Corporation Limited (RRECL)",
+    "state_portal_url": "https://energy.rajasthan.gov.in/rrecl",
+    "discoms": [
+      {
+        "name": "Jaipur Vidyut Vitran Nigam Limited (JVVNL)",
+        "website": "https://energy.rajasthan.gov.in/jvvnl"
+      },
+      {
+        "name": "Ajmer Vidyut Vitran Nigam Limited (AVVNL)",
+        "website": "https://energy.rajasthan.gov.in/avvnl"
+      },
+      {
+        "name": "Jodhpur Vidyut Vitran Nigam Limited (JdVVNL)",
+        "website": "https://energy.rajasthan.gov.in/jdvvnl"
+      }
+    ],
+    "net_metering_regulation_url": "https://energy.rajasthan.gov.in/rrecl",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "none",
+      "amount_text": "Central PM Surya Ghar subsidy applies. DISCOM feasibility and billing adjustments handled via BijliMitra / DISCOM portals.",
+      "source_url": "https://energy.rajasthan.gov.in/rrecl",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "RRECL coordinates state renewable targets; net metering applications map directly to local DISCOM sub-divisions.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "sikkim",
@@ -598,18 +698,40 @@
     "name_en": "Uttar Pradesh",
     "name_hi": "उत्तर प्रदेश",
     "is_union_territory": false,
-    "nodal_agency": null,
-    "state_portal_url": null,
-    "discoms": [],
-    "net_metering_regulation_url": null,
+    "nodal_agency": "Uttar Pradesh New and Renewable Energy Development Agency (UPNEDA)",
+    "state_portal_url": "https://upneda.org.in",
+    "discoms": [
+      {
+        "name": "Paschimanchal Vidyut Vitran Nigam Limited (PVVNL)",
+        "website": "https://pvvnl.org"
+      },
+      {
+        "name": "Dakshinanchal Vidyut Vitran Nigam Limited (DVVNL)",
+        "website": "https://dvvnl.org"
+      },
+      {
+        "name": "Madhyanchal Vidyut Vitran Nigam Limited (MVVNL)",
+        "website": "https://mvvnl.in"
+      },
+      {
+        "name": "Purvanchal Vidyut Vitran Nigam Limited (PuVVNL)",
+        "website": "https://puvvnl.up.gov.in"
+      },
+      {
+        "name": "Kanpur Electricity Supply Company (KESCO)",
+        "website": "https://kesco.co.in"
+      }
+    ],
+    "net_metering_regulation_url": "https://upneda.org.in",
     "state_top_up": {
-      "status": "not_verified",
-      "amount_text": null,
-      "source_url": null,
-      "verified_on": null
+      "status": "available",
+      "amount_text": "State subsidy of up to Rs. 15,000 for 1 kW, and Rs. 30,000 for 2 kW and above under UP Solar Energy Policy",
+      "source_url": "https://upneda.org.in",
+      "verified_on": "2026-11-23"
     },
-    "notes": null,
-    "status": "not_verified"
+    "notes": "Uttar Pradesh provides an additional state capital subsidy credited post commissioning via UPNEDA portal.",
+    "status": "verified",
+    "last_verified": "2026-11-23"
   },
   {
     "id": "uttarakhand",
