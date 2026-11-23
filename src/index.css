@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-solar-warm: #FEFDF5;
+  --color-solar-cream: #FFFBEB;
+  --color-solar-card: #FFFFFF;
+  --color-solar-border: #E2E8F0;
+  
+  --color-solar-green: #15803D;
+  --color-solar-green-hover: #166534;
+  --color-solar-green-light: #DCFCE7;
+  
+  --color-solar-orange: #EA580C;
+  --color-solar-orange-hover: #C2410C;
+  --color-solar-orange-light: #FFEDD5;
+  
+  --color-solar-stuck-bg: #FEE2E2;
+  --color-solar-stuck-text: #B91C1C;
+  --color-solar-stuck-border: #FCA5A5;
+  
+  --color-solar-whatsapp: #25D366;
+  --color-solar-whatsapp-hover: #128C7E;
+  --color-solar-whatsapp-light: #DCFCE7;
+
+  --color-solar-text-primary: #0F172A;
+  --color-solar-text-secondary: #334155;
+  --color-solar-text-muted: #64748B;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FEFDF5;
+  color: #0F172A;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Big tap target guarantee */
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}
